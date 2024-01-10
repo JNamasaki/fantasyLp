@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+
+
+.hero-bg{
+  position: relative;
+  margin: 0;
+
+  width: 100%;
+  max-width: 100%;
+  /* background-image: url('/public/Hero.svg'); */
+  /* background-size:contain;
+  background-repeat: no-repeat; 
+  background-position: center; */
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-bg img {
+  width: 100%;
+  z-index: -10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav{
+  position: absolute;
+  top: 20px;
+  right:25%;
+  left: 25%;
+  background: linear-gradient(to bottom, #FAEACA, #EFCFA4);
+  min-height: 44px;
+  /* position: flex; */
+  max-width: 70%;
+  align-content: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.navItem{
+  font-family: 'IM FELL English', serif;
+  border-right: 1px solid #EDCEA3;
+  color: #A9895D;
+  font-size: large;
+  font-weight: 400;
+  padding:0 20px;
+  text-emphasis: none;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBtn { 
+  right: 10px;
+}
+.desk-bg {
+  background-color: #131D24;
+
+  margin-top: -4px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 5% 20%;
+}
+
+.cardgroup {
+  margin-left: 10%;
+}
+.card{
+  display: inline-flex;
+  padding: 0 2.5%;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  color: #79969C;
+  border-right: 1px solid #232D33;
+  font-family: 'IM FELL English';
+  font-size:medium;
+  font-weight: 400;
+}
+
+.card:last-child {
+  border-right: none;
+}
+.card .tit {
+  color: #fff;
+  font-size:larger;
+  font-weight: 400;
+}
+
+.card .subtit {
+  font-size:large;
+  font-weight: 400;
+}
+
+.cta {
+  min-height: 50vh;
+  background-image: url('/public/Call\ To\ Action.svg');
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
 }
